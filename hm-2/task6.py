@@ -1,6 +1,6 @@
 print(
     '''
-    task 6: 
+    Escape sequences
     \\a - Bell(allert)
     \\b - Backspace
     \\n - New line
