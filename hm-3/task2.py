@@ -19,3 +19,12 @@ elif b > a:
     print(f'a = {a}, b = {b}')
 else: 
     print("Invalid")
+
+'''
+Также как вариант 
+
+a ^= b
+b ^= a
+a ^= b
+
+'''
