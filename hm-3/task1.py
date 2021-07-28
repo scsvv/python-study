@@ -5,5 +5,4 @@ PASSWORD = "qwerty"
 client_password = input("Введите пароль: ") 
 
 #проверка введенных значений с ожидаемым
-if client_password == PASSWORD: print("В вошли в учётную запись")
-else: print("Не верный пароль")
+print("В вошли в учётную запись" if client_password == PASSWORD else "Не верный пароль" )
