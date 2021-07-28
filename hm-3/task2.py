@@ -18,6 +18,7 @@ a = 10 - 7 = 3 | a  = 3 - начальное значения дл "b"
 if a == b: 
     print(f'a = {a}, b = {b}')
 elif a > b: 
+    a -= b 
     b += a  
     a = b - a 
     print(f'a = {a}, b = {b}')
