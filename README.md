@@ -4,6 +4,7 @@
     <ul>
         <li><a href="https://github.com/CarbonSkorobogatov/Python/tree/master/hm-1">Домашка 1</a></li>
         <li><a href="https://github.com/CarbonSkorobogatov/Python/tree/master/hm-2">Домашка 2</a></li>
+         <li><a href="https://github.com/CarbonSkorobogatov/Python/tree/master/hm-3">Домашка 3</a></li>
     </ul>
     <p>Технологии, используемые для выполнения ДЗ: </p>
     <ol>
