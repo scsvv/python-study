@@ -1,7 +1,7 @@
 from random import randint 
 
 machine_mumber = randint(1, 100)
-count = 1
+count = 0
 
 while True:
     user_mumber = input("Отгадайте число от 1 до 100: ")
