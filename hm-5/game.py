@@ -16,7 +16,7 @@ while True:
         break
     elif user_mumber == -100:
         print(f'Введите число!!!!!')
-    elif user_mumber > 0:
+    elif user_mumber < 0:
         print(f'Введите число больше 0')
     elif user_mumber > 100:
         print(f'Введите число меньше 100')
