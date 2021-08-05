@@ -11,7 +11,7 @@ if columns >= 3 and columns <= 9:
         row = ''
 
         #подсчёт количества елементов внутри ряда. (1, 3, 5, 7, 9, 11, 13)
-        COUNT = (i * 2) - 1
+        count = (i * 2) - 1
         
         #стартовое значение 1 элемента строки 
         symbol = 1
@@ -19,7 +19,7 @@ if columns >= 3 and columns <= 9:
         #растут ли значения в ряду или нет? 
         is_up = True
 
-        for j in range(1, COUNT + 1):
+        for j in range(1, count + 1):
             row += str(symbol)
             if(is_up and symbol < i):
                 symbol += 1
