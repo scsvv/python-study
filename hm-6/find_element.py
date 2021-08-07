@@ -1,8 +1,8 @@
-import random
+from random import randint
 
 
-list1: list = [random.randrange(0, 100) for i in range(10)]
-list2: list = [random.randrange(0, 100) for i in range(10)]
+list1: list = [randint(0, 100) for i in range(10)]
+list2: list = [randint(0, 100) for i in range(10)]
 
 print(list1 + list2)
 

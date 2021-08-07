@@ -1,6 +1,6 @@
 from random import randint
 
-my_list: list = [i for i in range(10)]
+my_list: list = [i for i in randint(10)]
 k = randint(0, 9)
 
 print(f'k = {k}, елемент с этим номером = {my_list[k]}')
