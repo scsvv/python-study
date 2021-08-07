@@ -1,6 +1,6 @@
 from random import randint
 
-my_list: list = [i for i in randint(10)]
+my_list: list = [i for i in range(10)]
 k = randint(0, 9)
 C = randint(1, 9) * 11
 
