@@ -4,8 +4,6 @@ string = string.split()
 # словарь в котором хранятся все слова, где ключ - количество раз, а значение список из слов
 words_repeats: dict = dict()
 
-# сщетчик, слов с найбольшим количесвтом повторений 
-count = 0
 
 # алгоритм для хранинения в словаре под значением слова, а под ключ'м количество повторений
 for word in string:
@@ -20,8 +18,4 @@ for word in string:
     words_repeats[key].append(word)
 
 
-for i in words_repeats.keys():
-    if i > count:
-        count = i
-
-print(words_repeats[count])
+print(words_repeats)
