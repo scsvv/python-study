@@ -15,6 +15,7 @@ def sort_matrix(list_matrix: list):
 
     for i in range(len(sum) - 1):
         for j in range(len(sum) - 2, i - 1, -1):
+            
             if sum[j + 1] < sum[j]:
                 sum[j], sum[j + 1] =  sum[j + 1], sum[j]
                 for row in range(0, len(sum)):
@@ -22,13 +23,19 @@ def sort_matrix(list_matrix: list):
     
     for i in range(len(sum)):
         for j in range(len(sum) - 1):
-            for k in range(len(sum)-i - 1):
+            for k in range(len(sum) - 2, -1, -1):
+                
                 if i % 2 == 0:
+                    
                     if list_matrix[k][i] < list_matrix[k + 1][i]:
                         list_matrix[k][i], list_matrix[k + 1][i] = list_matrix[k + 1][i], list_matrix[k][i]
                 else: 
-                    if list_matrix[k][i] > list_matrix[k + 1][i]:
+                    if list_matrix[k + 1][i] < list_matrix[k][i]:
                         list_matrix[k][i], list_matrix[k + 1][i] = list_matrix[k + 1][i], list_matrix[k][i]
+
+
+
+
 
 def print_list(list_matrix : list) -> None:
     list_matrix.append(sum)
