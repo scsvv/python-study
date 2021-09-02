@@ -17,12 +17,11 @@ class BanWarningWord(Exception):
 if __name__ == "__main__":
     try:
         baned_word = "cat"
-        sentance: str = input("Enter your sentance: \n")
+        sentance = input("Enter your words: \n")
         sentance = sentance.split()
-        
+
         if sentance.count(baned_word) != 0:
             raise BanWarningWord()
     except BanWarningWord as e:
         print(e)
         exit(-1)
-    
