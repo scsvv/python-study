@@ -32,10 +32,12 @@ class DigitalCounter:
     def increment(self):
         if self.max_value != self.value:
             self.value += 1
+        return self.value
 
     def decrement(self):
         if self.min_value != self.value:
             self.value -= 1
+        return self.value
 
     def get_value(self):
         return self.value
