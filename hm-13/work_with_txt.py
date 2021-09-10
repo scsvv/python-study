@@ -19,13 +19,13 @@ def format_info(student: dict, desired_width: int) -> str:
     return fullname + formatted_grade.rjust(desired_width-len(fullname))
 
 
-def print_weak_students_and_score(students: list) -> None:
+def print_weak_students_and_score(students_info: list) -> None:
 
-    for student in students:
+    for student in students_info:
         if student['marks'] < 5:
             print(format_info(student, 24))
 
-    average_grades = [student['marks'] for student in students]
+    average_grades = [student['marks'] for student in students_info]
     print("Средний балл по классу: {:.2f}".format(
         calculate_average_grade(average_grades))
     )
@@ -33,7 +33,7 @@ def print_weak_students_and_score(students: list) -> None:
 
 def read_students_from(file) -> list:
 
-    students = list()
+    students_list = list()
     while True:
         line: str = file.readline()
         if not line:
@@ -41,14 +41,14 @@ def read_students_from(file) -> list:
 
         firstname, lastname, *grades = line.split()
         marks = calculate_average_grade(list(map(int, grades)))
-        students.append(create_student(firstname, lastname, marks))
+        students_list.append(create_student(firstname, lastname, marks))
 
-    return students
+    return students_list
 
 
-def write_students_to(students: list, file) -> None:
+def write_students_to(students_list: list, file) -> None:
 
-    for student in students:
+    for student in students_list:
         file.write(format_info(student, 24))
         file.write("\n")
 
